@@ -2,8 +2,8 @@
 // Pure unit tests for the C4 orthogonal connector router + short-label derivation.
 // Run: node report-template/.build/test/c4_router.test.mjs  (no deps, no DOM).
 // The router functions (c4RouteWaypoints / c4RoundedPath) are ported VERBATIM from
-// docs/superpowers/design_handoff_c4_architecture_view (README §204-249 / the
-// prototype) and live in components.jsx; they are re-declared here so the math is
+// the C4 design handoff (README §204-249 / the prototype; a design note kept
+// outside the repo) and live in components.jsx; they are re-declared here so the math is
 // testable under plain node. c4ShortEdgeLabel is re-declared from the SHIPPED
 // components.jsx (it landed earlier in this milestone, Task 4) so the node test
 // pins the contract that actually ships — see the note above its assertions.

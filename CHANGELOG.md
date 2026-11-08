@@ -288,6 +288,22 @@ and `docs/superpowers/plans/2026-10-10-local-apps-plan{1,2,3}-*.md`.
   untouched. Third-party packs that declare `<2.0.0` need the same change
   before they will build against a 2.0 engine.
 
+- **New repository home.** The repository moved from the `illusconsulting`
+  account to the `illus-consulting` organization. The plugin manifests, the
+  `pyproject.toml` project URLs and the docs now point at
+  `github.com/illus-consulting/apd-gauntlet`. GitHub redirects the old URLs, so
+  existing clones and `/plugin marketplace add illusconsulting/apd-gauntlet`
+  registrations keep working. To update a clone, run
+  `git remote set-url origin https://github.com/illus-consulting/apd-gauntlet.git`.
+  (#79)
+- **Design-document tracking cleanup.** This merge stops tracking the 64 files
+  inherited from `main` under `docs/superpowers/` and `docs/audits/`.
+  The 25 `next`-only files remain tracked pending a follow-up.
+  References to the removed files in `CONTRIBUTING.md`,
+  ADR-0022, `docs/adapting-to-other-domains.md`, the deprecated
+  `apd-orchestrator` agent and the report template were removed or reworded.
+  (#79)
+
 ### Fixed
 
 - **`metrics.yaml` reports real pre-dedup counts.** `findings_pre_dedup` and
