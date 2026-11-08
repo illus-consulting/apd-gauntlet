@@ -52,8 +52,8 @@ Ship via **two lockstep channels** — one PyPI package and one Claude Code plug
 - **Add `.claude-plugin/marketplace.json`** — a marketplace descriptor with
   `name: apd-security` and `owner: { name: "APD Gauntlet contributors" }` so the
   plugin is installable via `/plugin install apd-gauntlet@apd-security`. The
-  `illusconsulting/apd-gauntlet` in `/plugin marketplace add
-  illusconsulting/apd-gauntlet` is the GitHub org/repo the marketplace is fetched
+  `illus-consulting/apd-gauntlet` in `/plugin marketplace add
+  illus-consulting/apd-gauntlet` is the GitHub org/repo the marketplace is fetched
   from, not the `owner` field.
 - **Add `commands/run.md`** — a `/apd-gauntlet:run` slash command that bridges
   the non-component workflow runner via `${CLAUDE_PLUGIN_ROOT}` and enforces the

@@ -14,9 +14,8 @@ the background or headlessly, which can interrupt the dispatches and leave an
 empty or partial run directory; see `docs/running-the-gauntlet.md`). This agent
 no longer orchestrates runs — the runner dispatches intake, the tier specialists,
 the decomposed synthesis pipeline, and the gated report audit directly, with
-native auto-resume. See
-`docs/superpowers/specs/2026-05-29-apd-token-resilience-design.md` §4 for the
-architecture and §7 for the decomposed Phase 5.
+native auto-resume. See `docs/architecture.md` for the current architecture,
+including the decomposed synthesis agents.
 
 `apd-cluster-adjudicator`, `apd-report-writer`, and `apd-report-auditor` are
 workflow-runner agents (Plan 3) dispatched by the runner, not by this agent.

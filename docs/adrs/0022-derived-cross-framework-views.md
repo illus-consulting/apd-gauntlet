@@ -88,6 +88,3 @@ Three kinds, by what they relate:
 - [ADR-0012: MITRE ATLAS Finding Taxonomy](0012-mitre-atlas-finding-taxonomy.md)
 - [ADR-0014: OWASP MAS Mobile Taxonomy](0014-owasp-mas-mobile-taxonomy.md)
 - [ADR-0020: Derived Fields Are Tooling-Authored](0020-tooling-authored-derived-fields.md) (same philosophy, applied to identity)
-- `docs/superpowers/specs/2026-06-14-capec-bridge-design.md` (Bridge — first implementation)
-- `docs/superpowers/specs/2026-06-14-attack-detection-overlay-design.md` (Overlay)
-- `docs/superpowers/specs/2026-06-14-compliance-projection-layer-design.md` (Projection)
