@@ -4,6 +4,22 @@ All notable changes to this project will be documented in this file. Format base
 
 ## [Unreleased]
 
+### Changed
+
+- **New repository home.** The repository moved from the `illusconsulting`
+  account to the `illus-consulting` organization. The plugin manifests, the
+  `pyproject.toml` project URLs and the docs now point at
+  `github.com/illus-consulting/apd-gauntlet`. GitHub redirects the old URLs, so
+  existing clones and `/plugin marketplace add illusconsulting/apd-gauntlet`
+  registrations keep working. To update a clone, run
+  `git remote set-url origin https://github.com/illus-consulting/apd-gauntlet.git`.
+  (#79)
+- **Design plans, specs and audits are local-only.** `docs/superpowers/` and
+  `docs/audits/` are no longer tracked. References to them in `CONTRIBUTING.md`,
+  ADR-0022, `docs/adapting-to-other-domains.md`, the deprecated
+  `apd-orchestrator` agent and the report template were removed or reworded.
+  (#79)
+
 ## v1.7.1 — 2026-10-17
 
 ### Added
