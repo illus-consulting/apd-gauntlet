@@ -4,10 +4,7 @@ All notable changes to this project will be documented in this file. Format base
 
 ## Unreleased — 2.0 line (`next`)
 
-The 2.0 line adds optional decision models and local CLI, TUI and web apps. The
-design and implementation plans are in
-`docs/superpowers/specs/2026-10-10-local-apps-and-decision-models-design.md`
-and `docs/superpowers/plans/2026-10-10-local-apps-plan{1,2,3}-*.md`.
+The 2.0 line adds optional decision models and local CLI, TUI and web apps.
 
 ### Added
 
@@ -296,13 +293,13 @@ and `docs/superpowers/plans/2026-10-10-local-apps-plan{1,2,3}-*.md`.
   registrations keep working. To update a clone, run
   `git remote set-url origin https://github.com/illus-consulting/apd-gauntlet.git`.
   (#79)
-- **Design-document tracking cleanup.** This merge stops tracking the 64 files
-  inherited from `main` under `docs/superpowers/` and `docs/audits/`.
-  The 25 `next`-only files remain tracked pending a follow-up.
-  References to the removed files in `CONTRIBUTING.md`,
-  ADR-0022, `docs/adapting-to-other-domains.md`, the deprecated
-  `apd-orchestrator` agent and the report template were removed or reworded.
-  (#79)
+- **Design-document tracking cleanup.** `docs/superpowers/` and `docs/audits/`
+  are no longer tracked: the 64 files inherited from `main` (#79) and the 25
+  `next`-only plans, specs and ledgers. References to them in
+  `CONTRIBUTING.md`, ADR-0022, `docs/adapting-to-other-domains.md`, the report
+  template and this changelog were removed or reworded. The test that compares
+  `eval/gates.yaml` with the program master plan now skips when the plan is not
+  present locally.
 
 ### Fixed
 
