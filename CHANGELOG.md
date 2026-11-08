@@ -296,8 +296,10 @@ and `docs/superpowers/plans/2026-10-10-local-apps-plan{1,2,3}-*.md`.
   registrations keep working. To update a clone, run
   `git remote set-url origin https://github.com/illus-consulting/apd-gauntlet.git`.
   (#79)
-- **Design plans, specs and audits are local-only.** `docs/superpowers/` and
-  `docs/audits/` are no longer tracked. References to them in `CONTRIBUTING.md`,
+- **Design-document tracking cleanup.** This merge stops tracking the 64 files
+  inherited from `main` under `docs/superpowers/` and `docs/audits/`.
+  The 25 `next`-only files remain tracked pending a follow-up.
+  References to the removed files in `CONTRIBUTING.md`,
   ADR-0022, `docs/adapting-to-other-domains.md`, the deprecated
   `apd-orchestrator` agent and the report template were removed or reworded.
   (#79)
