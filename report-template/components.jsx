@@ -628,7 +628,7 @@ function AttackPathStrip({ attackPath, onOpenPath }) {
 }
 
 // ── C4 orthogonal connector router (ported VERBATIM from the design handoff) ──
-// docs/superpowers/design_handoff_c4_architecture_view/README.md §204-249 and the
+// (C4 design handoff README §204-249, a design note kept outside the repo) and the
 // prototype's anchors()/routeWaypoints()/roundedPath(). Pure functions: no React,
 // no Cytoscape, no DOM globals beyond the element handed in. Anchors are measured
 // from the LAYOUT box model (offsetLeft/Top/Width/Height walked up to the stage)

@@ -17,9 +17,10 @@ def test_orchestrator_points_at_workflow_runner() -> None:
     assert ".claude/workflows/apd-gauntlet.js" in text
 
 
-def test_orchestrator_references_design_spec() -> None:
+def test_orchestrator_references_architecture_doc() -> None:
     text = AGENT.read_text(encoding="utf-8")
-    assert "2026-05-29-apd-token-resilience-design.md" in text
+    assert "docs/architecture.md" in text
+    assert (REPO / "docs" / "architecture.md").is_file()
 
 
 def test_orchestrator_ends_with_single_trailing_newline() -> None:

@@ -4,7 +4,7 @@ Thanks for your interest in improving APD Gauntlet. This document describes our 
 
 ## Quick links
 
-- [Design spec](docs/superpowers/specs/2026-05-24-apd-gauntlet-v1-design.md)
+- [Architecture decision records](docs/adrs/)
 - [Architecture](docs/architecture.md)
 - [Running the gauntlet](docs/running-the-gauntlet.md)
 
