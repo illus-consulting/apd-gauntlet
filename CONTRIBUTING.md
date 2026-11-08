@@ -11,7 +11,7 @@ Thanks for your interest in improving APD Gauntlet. This document describes our 
 ## Local development setup
 
 ```bash
-git clone https://github.com/illusconsulting/apd-gauntlet.git
+git clone https://github.com/illus-consulting/apd-gauntlet.git
 cd apd-gauntlet
 python3 -m venv .venv
 . .venv/bin/activate

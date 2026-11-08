@@ -8,8 +8,8 @@ a line the two channels move in lockstep.
 
 | Line | Branch | Versions | PyPI | Claude Code plugin |
 | --- | --- | --- | --- | --- |
-| Stable (1.7) | `main` | `1.7.Z` | `pip install apd-gauntlet` (the default) | `/plugin marketplace add illusconsulting/apd-gauntlet` → `apd-gauntlet@apd-security` |
-| Next (2.0) | `next` | `2.0.0aN`, `2.0.0bN`, `2.0.0rcN` | `pip install --pre apd-gauntlet`, or an exact pin such as `apd-gauntlet==2.0.0a1` | `/plugin marketplace add illusconsulting/apd-gauntlet#next` → `apd-gauntlet@apd-security-next` |
+| Stable (1.7) | `main` | `1.7.Z` | `pip install apd-gauntlet` (the default) | `/plugin marketplace add illus-consulting/apd-gauntlet` → `apd-gauntlet@apd-security` |
+| Next (2.0) | `next` | `2.0.0aN`, `2.0.0bN`, `2.0.0rcN` | `pip install --pre apd-gauntlet`, or an exact pin such as `apd-gauntlet==2.0.0a1` | `/plugin marketplace add illus-consulting/apd-gauntlet#next` → `apd-gauntlet@apd-security-next` |
 
 `pip install apd-gauntlet` never selects a pre-release, so 2.0 alphas, betas
 and release candidates reach only people who ask for them. On GitHub, the

@@ -49,13 +49,13 @@ To use the chat-driven workflow, Claude also needs the agents and skills. Get th
 - **Clone the repo** and open it in Claude Code (the agents + skills live under `.claude/`):
 
   ```bash
-  git clone https://github.com/illusconsulting/apd-gauntlet.git && cd apd-gauntlet
+  git clone https://github.com/illus-consulting/apd-gauntlet.git && cd apd-gauntlet
   ```
 
 - **Or install the Claude Code plugin** (from any project):
 
   ```text
-  /plugin marketplace add illusconsulting/apd-gauntlet
+  /plugin marketplace add illus-consulting/apd-gauntlet
   /plugin install apd-gauntlet@apd-security
   ```
 
