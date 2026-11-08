@@ -20,8 +20,15 @@ REPO = pathlib.Path(__file__).resolve().parent.parent
 GATES = REPO / "eval/gates.yaml"
 
 
+MASTER_PLAN = REPO / "docs/superpowers/plans/2026-10-10-program-master-plan.md"
+
+
+@pytest.mark.skipif(
+    not MASTER_PLAN.is_file(),
+    reason="docs/superpowers/ is local-only; the master plan is not in this checkout",
+)
 def test_gate_texts_match_master_plan_verbatim():
-    plan = (REPO / "docs/superpowers/plans/2026-10-10-program-master-plan.md").read_text()
+    plan = MASTER_PLAN.read_text()
     marker = "These comparison gates are proposals, recorded in `eval/gates.yaml`:"
     block = plan.split(marker)[1].split("- **Ids")[0]
     bullets = [b.strip().rstrip(";.") for b in re.findall(r"^  - (.+)$", block, re.MULTILINE)]
