@@ -10,7 +10,7 @@
       "description": "9 APD specialist agents + intake + the gauntlet workflow runner + synthesizer fallback. Requires the apd-gauntlet PyPI package on PATH.",
       "version": "1.7.1",
       "license": "Apache-2.0",
-      "homepage": "https://github.com/illusconsulting/apd-gauntlet",
+      "homepage": "https://github.com/illus-consulting/apd-gauntlet",
       "keywords": ["security", "architecture", "review", "apd"]
     }
   ]

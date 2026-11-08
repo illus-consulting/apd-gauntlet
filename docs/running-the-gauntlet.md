@@ -27,7 +27,7 @@ Claude Code plugin (the agents, skills, and slash commands). To install the
 plugin lane, add the marketplace and install the plugin from Claude Code:
 
 ```text
-/plugin marketplace add illusconsulting/apd-gauntlet
+/plugin marketplace add illus-consulting/apd-gauntlet
 /plugin install apd-gauntlet@apd-security
 ```
 

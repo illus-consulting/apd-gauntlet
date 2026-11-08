@@ -61,10 +61,10 @@ Changes to any of these surfaces require a version bump. Internal refactors of `
 The release workflow publishes to PyPI via trusted publishing. This requires a one-time setup:
 
 1. Create the `apd-gauntlet` project on PyPI (manual; reserved by initial release).
-2. In PyPI's "Publishing" tab, add a trusted publisher entry for the GitHub repo `illusconsulting/apd-gauntlet`, workflow `release.yml`, environment unset.
+2. In PyPI's "Publishing" tab, add a trusted publisher entry for the GitHub repo `illus-consulting/apd-gauntlet`, workflow `release.yml`, environment unset.
 3. Tag a release (`git tag vX.Y.Z && git push --tags`). The release workflow publishes automatically.
 
-If trusted publishing isn't set up, the workflow's PyPI step fails; the GitHub Release still succeeds. Set up trusted publishing before the first tag.
+If trusted publishing isn't set up, the workflow's PyPI step fails and the job stops there, so the GitHub Release step never runs. Set up trusted publishing before the first tag. The trusted publisher names the repository owner, so update it on PyPI whenever the repository moves to a new owner.
 
 ## Deprecation policy
 

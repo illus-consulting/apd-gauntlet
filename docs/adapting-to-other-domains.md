@@ -181,7 +181,7 @@ This writes `.claude/skills/apd-domain/SKILL.md` from the pack. Confirm the gene
 
 ## 4. Multi-domain mechanics
 
-A single run can examine a solution across more than one pack at once. The run-config key is `domains:` — a YAML list — and `build-domain-skill` accepts an ordered set of positional pack names, merging them into one `apd-domain` skill. The merge engine (see `docs/superpowers/specs/2026-05-30-multi-domain-runs-design.md`) is per-component:
+A single run can examine a solution across more than one pack at once. The run-config key is `domains:` — a YAML list — and `build-domain-skill` accepts an ordered set of positional pack names, merging them into one `apd-domain` skill. The merge engine is per-component:
 
 - **Surface union, deduped by key.** `crown_jewels`, `attacker_positions`, and `default_trust_boundaries` are concatenated across packs and deduped by key (`pattern` / `position` / `boundary`); each retained item records the contributing pack(s). When two packs define the same key with materially different descriptions, both are retained, attributed.
 - **Calibration prose, per pack under provenance headers.** Each pack's `severity-rubric.md`, `consequential-actions.md`, `immutability-classes.md`, and `data-taxonomy.md` is emitted under a `## Domain: <pack> — Source: <file>` header, so every rubric and surface is present and labeled by origin.
